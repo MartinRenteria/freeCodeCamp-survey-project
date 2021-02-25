@@ -8,17 +8,60 @@
 </head>
 <body>
 
-    <h2 id="title">Building a Survey Form</h2>
+    <h1 id="title">Building a Survey Form</h1>
     <p id="description">This is practice building a survey form</p>
     <form id="survey-form">
-        <label for="name">Enter your name:</label>
-        <input id="name" type="text" placeholder="Enter a name">
+        <label for="name" id="name-label">Enter your name:</label>
+        <input id="name" type="text" placeholder="Enter a name" required>
         <br><br>
-        <label for="email">Enter your email</label>
+        <label for="email" id="email-label">Enter your email</label>
         <input id="email" type="email" placeholder="Enter an email" required>  
         <br><br>
-        <label for="number">How many animes have you watched</label>
+        <label for="number" id="number-label">How many animes have you watched</label>
         <input id="number" type="number" min="0" max="10" placeholder="0">
+        <label for="cars">Choose a car:</label>
+  <select name="genres" id="dropdown">
+    <option value="fantasy">Fantasy</option>
+    <option value="romance">Romance</option>
+    <option value="comedy">Comedy</option>
+    <option value="action">Action</option>
+  </select>
+
+  <p>Please select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+
+  <br>  
+
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+
+  <br>
+
+  <p>How much do you like anime</p>
+  <input type="checkbox" id="0" name="0" value="none">
+  <label for="0"> Don't like anime</label><br>
+  <input type="checkbox" id="1" name="1" value="between">
+  <label for="1"> Neither like or hate it</label><br>
+  <input type="checkbox" id="2" name="2" value="like">
+  <label for="2"> I LOVE ANIME!!!!</label><br><br>
+
+  <label for="explanation">Please answer honestly</label><br>
+<textarea id="explanation" name="explanation" rows="4" cols="50">
+    Within a couple sentences, explain why you do or do not enjoy anime. 
+  </textarea><br><br>
+
+<p>Click "submit" once you are ready and everythin has been answered!</p>
+<input id="submit" type="submit" value="Submit"><br><br>
     </form>
 
 
